@@ -1,7 +1,7 @@
 def print_arr(arr,i,n):
-	print(arr[i],end=' ')
 	if i<n:
-		print_arr(arr,i+1)
+		print(arr[i],end=' ')
+		print_arr(arr,i+1,n)
 
 arr=eval(input("Enter an array:"))
 if arr==[]:
