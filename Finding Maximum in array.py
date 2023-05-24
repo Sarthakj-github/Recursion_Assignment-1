@@ -7,4 +7,4 @@ if arr==[]:
 	print("Empty Array!")
 else:
 	print("Finding maximum in array:-")
-    print_arr(arr,len(arr))
+    find_max(arr,len(arr))
