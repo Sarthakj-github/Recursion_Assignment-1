@@ -7,5 +7,5 @@ arr=eval(input("Enter an array:"))
 if arr==[]:
     print("Empty Array!")
 else:
-    print("Printing in reverse order:-")
+    print("Printing an array:-")
     print_arr(arr,0,len(arr))
