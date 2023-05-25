@@ -1,7 +1,7 @@
 def print1_n(n):
-	if n!=1:
+	if n:
 		print1_n(n-1)
-	print(n,end=' ')
+		print(n,end=' ')
 
 n=int(input("Enter a number:"))
 if n<1:
