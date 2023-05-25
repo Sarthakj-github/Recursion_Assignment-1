@@ -1,12 +1,11 @@
-def find_max(L,i,m):
+def find_max(L,i):
     if i:
-        m=max(m,L[i-1])
-        find_max(L,i-1,m)
-        return m
+        return max(L[i],find_max(L,i-1))
+    return L[i]
 
 arr=eval(input("Enter an array:"))
 if arr==[]:
     print("Empty Array!")
 else:
     print("Maximum in array:-")
-    print(find_max(arr,len(arr),-float("inf")))
+    print(find_max(arr,len(arr)-1))
